@@ -1,0 +1,248 @@
+body, html {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #E8F0FF, #F7FFF5);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: #333;
+    padding-top: 80px;
+}
+
+.Header-Container {
+    width: 100%;
+    background: rgba(238, 168, 202, 1);
+    padding: 1px 0; 
+    text-align: center;
+    color: white;
+    font-size: 1rem; 
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); 
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(8px); 
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1); 
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between links */
+    padding: 10px 0;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.navbar-links a:hover {
+    color: #FFC857; 
+    transform: scale(1.1); 
+}
+
+.Form-Container {
+    flex-direction: column;
+    align-items: stretch;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 40px;
+    margin: 40px auto; 
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding-bottom: 60px;
+}
+.Form-Container label { 
+    margin-top: 5px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-weight:500;
+    color: #555;
+}
+
+.Form-Container p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.Form-Container input {
+    width: calc(100% - 16px);
+    padding: 12px;
+    margin-top: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1rem;
+    color: #555;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.Form-Container select {
+    width: calc(100% - 16px);
+    padding: 12px;
+    margin-top: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1rem;
+    color: #555;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+.Form-Container input:focus,
+.Form-Container select:focus {
+    border-color: #FF6B6B;
+    outline: none;
+}
+
+.Form-Container button.submit-btn {
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
+.FieldToUpdate-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.FieldToUpdate-form label {
+    margin-bottom: 5px;
+}
+
+.Sort-Options  {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.Sort-Options label {
+    margin-bottom: 5px;
+}
+
+.submit-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #3f5efb, #fc466b);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.No-Items {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #FF6B6B;
+    margin-top: 20px;
+}
+
+
+.Container-btns {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background: rgba(255, 111, 97, 1);  
+    border: none;
+    margin-top: 10px;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color:rgba(240, 95, 85, 1);
+    transform: translateY(-5px);
+}
+
+.Itemlist-Container {
+    background-color: white;
+    margin: 30px auto; 
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #FF6B6B;
+    color: white;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F0F0F0;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.scale-up {
+    animation: scaleUp 0.5s ease-in;
+}
